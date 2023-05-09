@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(27, 16, 16);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 3vmax 5vmax;
+
+}
+
+nav h1 {
+    font-size: 50px;
+
+    font-weight: 800;
+    font-family: Helvetica;
+    color: #FF6000;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.logo a {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    font-weight: 500;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.25s;
+
+}
+
+.logo a:hover {
+    color: blue;
+
+}
+
+section {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    padding-top: 70px;
+    animation: start 1s 1.3s both;
+    opacity: 0;
+}
+
+@keyframes start {
+    from {
+        transform: translateX(-40%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.left h2 {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: Helvetica;
+    color: orangered;
+    margin-top: 30px;
+}
+
+
+.left .btn {
+    padding: 10px 20px;
+    background-color: orange;
+    transition: 0.25s linear all;
+    margin-top: 15px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+
+    transform: scale(1.4);
+}
+
+.right {
+    width: 45%;
+    height: 20vh;
+}
+
+img {
+    width: 250px;
+    height: 200px;
+    margin-left: 250px;
+    animation: right 1s .10s both;
+
+}
+
+@keyframes right {
+    from {
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.para {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+
+
+
+}
+
+.box-1 {
+    border: 1px solid black;
+    width: 30%;
+    height: 60%;
+    border: none;
+    padding: 20px 20px;
+    margin-left: 20px;
+    align-items: center;
+    background-color: #C0EEE4;
+
+}
+
+.box-1 h1 {
+    font-weight: 600;
+    color: orangered;
+    margin-top: 15px;
+    text-align: center;
+
+}
+
+.box-1 p {
+    font-size: 15px;
+    color: #000;
+    font-family: 'Montserrat';
+    margin-top: 10px;
+}
+
+main {
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 50px;
+    font-family: 'Montserrat';
+
+
+}
+
+.left-image2 {
+
+    justify-content: space-between;
+
+    margin-left: 10%;
+    justify-content: center;
+    text-align: center;
+
+}
+
+h3 {
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+p {
+    margin-top: 20px;
+    color: orangered;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+
+
+}
+
+.right-image2 {
+    width: 40%;
+}
+
+.heading {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.im {
+    width: 100%;
+    height: 50%;
+    background-image: url(https://images6.alphacoders.com/368/368809.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.head {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 20px;
+    text-shadow: 1px, 1px, 2px black;
+}
+
+.head2 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 400;
+    text-shadow: 1px, 1px, 2px black;
+}
+
+.hed {
+    display: flex;
+    font-weight: 600;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.deal {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 40px;
+    width: 100%;
+    font-family: 'Montserrat';
+
+
+
+
+}
+
+.bug {
+    border: 1px solid black;
+
+
+    margin-left: 30px;
+    background-color: #fff;
+
+    width: 30%;
+    height: 25vh;
+    animation: bug 3s 3.20s both;
+    opacity: 0;
+
+}
+
+@keyframes bug {
+    from {
+        transform: translateX(20%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.bug h2 {
+    font-weight: 800;
+    color: orange;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.bug p {
+
+    display: flex;
+    text-align: center;
+    color: #000;
+}
+
+.cn {
+    display: flex;
+    justify-content: center;
+    margin-left: 47%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: aqua;
+    transition: 0.25s;
+}
+
+.cn:hover {
+    transform: scale(1.4);
+}
+
+.head h1 {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+    text-shadow: 1px, 1px, 2px black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+}
+
+.client {
+    width: 20%;
+    height: 90%;
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 30px;
+    background-color: #C0EEE4;
+    margin-top: 30px;
+
+}
+
+.client p {
+
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-family: 'Montserrat';
+    color: #000;
+}
+
+.client h2 {
+    margin-left: 50px;
+    margin-top: 50px;
+    color: orangered;
+}
+
+.our-chef {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.our-chef h1 {
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+}
+
+.main-gallery {
+    width: 80%;
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.gallery-box {
+
+
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+}
+
+.gallery-box h1 {
+    color: #fff;
+    margin-left: 30%;
+}
+
+.main-factor {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: 50px;
+    padding: 20px 20px;
+    height: 90vh;
+}
+
+.linear-factor h2 {
+    font-size: 20px;
+    color: orangered;
+}
+
+.linear-factor h1 {
+    font-size: 20px;
+}
+
+
+.linear-factor a {
+
+    display: flex;
+    text-align: center;
+    padding: 20px 10px;
+    text-decoration: none;
+    transition: 0.25s;
+    font-weight: 500;
+    color: black;
+}
+
+.linear-factor a:hover {
+    color: blue;
+}
+
+i {
+    color: orange;
+
+}
